@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>IFE JavaScript Task 01</title>
+  </head>
+<body onload="paixu()">
+
+  <h3>llllist</h3>
+  
+  <ul id="aqi-list">
+
+  </ul>
+
+<script type="text/javascript">
+
+var aqiData = [
+  ["BJ",90],
+  ["SH",50],
+  ["FZ",10],
+  ["GZ",50],
+  ["CD",90],
+  ["XA",100]
+];
+
+function paixu(){
+  /*
+  在注释下方编写代码
+  遍历读取aqiData中各个城市的数据
+  将空气质量指数大于60的城市显示到aqi-list的列表中
+  */
+
+//简化
+
+var oUl=document.getElementById("aqi-list");
+
+var xuhao=["first","second","third","fourth","fifth"];
+
+
+
+//从大到小排序
+aqiData.sort(function(a,b){return b[1]-a[1];});
+
+oUl.innerHTML="";
+
+for(var i=0;i<aqiData.length;i++){
+if(aqiData[i][1]>60){
+var oLi=document.createElement("li");
+oLi.appendChild(document.createTextNode(xuhao[i]+":"+aqiData[i][0]+aqiData[i][1]));
+oUl.appendChild(oLi);
+}
+}
+};
+
+</script>
+</body>
+</html>

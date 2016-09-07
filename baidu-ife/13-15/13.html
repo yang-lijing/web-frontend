@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>IFE JavaScript Task 01</title>
+  </head>
+<body>
+  <label>ENTER A NUMBER:<input id="aqi-input" type="text"></label>
+  <button id="button" onclick="sclick()">CLICK</button>
+
+  <div>YOUR INPUT:<span id="aqi-display">NO</span></div>
+
+<script type="text/javascript">
+
+function sclick(){
+  /*	
+  在注释下方写下代码
+  给按钮button绑定一个点击事件
+  在事件处理函数中
+  获取aqi-input输入的值，并显示在aqi-display中
+  */
+var x=document.getElementById("aqi-input").value;
+document.getElementById("aqi-display").innerHTML=x;
+
+};
+</script>
+</body>
+</html>

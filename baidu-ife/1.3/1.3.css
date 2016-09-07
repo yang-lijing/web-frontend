@@ -1,0 +1,49 @@
+*{
+  margin:0px;
+}
+
+.container{
+  width:1200px;
+  margin:20px auto;
+  padding:20px;
+  background-color:#eee;
+  border:solid #999 1px;
+}
+.clearfix:after{
+  content:"";
+  display:block;
+  clear:both;
+}
+
+.container1{
+  float:left;
+  width:200px;
+  background-color:white;
+  border:1px gainsboro solid;
+
+}
+.container1 p{
+  margin:20px 0px 0px 0px;
+}
+.container1 img{
+  float:left;
+  margin:20px;
+}
+
+.container2{
+  margin:0px 140px 0px 220px;
+  background-color:white;
+  border:1px gainsboro solid;
+  padding:20px;
+}
+
+.container3{
+  float:right;
+  width:80px;
+  background-color:white;
+  border:1px gainsboro solid;
+  padding:10px 20px;
+}
+.container3 img{
+  margin:10px 0px;
+}

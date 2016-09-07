@@ -1,0 +1,16 @@
+ul li{
+  list-style: none;
+  background-color:red;
+  margin:2px;
+  height:20px;
+}
+
+.container{
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+span{
+  background-color: aqua;
+}
